@@ -139,3 +139,28 @@ const shakeHands = function(team1, team2) {
 
 };
 shakeHands('Eagles', 'Dragons');
+
+
+// FURTHER STUDY:
+
+// So far, we have just been console logging in our functions. But, functions can actually return a value back to its call site. Let’s create a function to represent a dice role.
+function rollDice() {
+    let possibleRoles = [1,2,3,4,5,6];
+    let randomNumber = Math.floor(Math.random() * possibleRoles.length);
+    return possibleRoles[randomNumber];
+}
+let firstRoll = rollDice();
+let secondRoll = rollDice();
+console.log(firstRoll, secondRoll);
+
+
+// Now, let’s take this one step further. Let’s create a function that calls rollDice twice, and multiplies the returned rolls together.
+function diceMultiplier() {
+    let firstRoll = rollDice();
+    let secondRoll = rollDice();
+  
+    return firstRoll * secondRoll;
+}
+let multipliedNumber = diceMultiplier();
+console.log(multipliedNumber);
+// Note: the firstRoll and secondRoll variables above are scoped to the diceMultiplier function, and are not related to the variables with the same name in the outer scope.
