@@ -1,0 +1,9 @@
+h1, h3 {
+    color: rgb(200, 163, 205);
+    background: #000000;
+}
+
+div {
+    width: 50%;
+    padding-left: 30px;
+}
