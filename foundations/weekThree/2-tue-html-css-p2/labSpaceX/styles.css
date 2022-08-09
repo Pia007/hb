@@ -41,7 +41,7 @@ header {
 }
 
 .navigation {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -50,6 +50,7 @@ header {
 .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 .nav-item {
     font-size: 14px;
@@ -69,13 +70,39 @@ header {
 
 .nav-link:hover,
 .nav-link:focus,
-.nav-link:active {
+.nav-link:active,
+.shop-link:hover,
+.shop-link:focus,
+.shop-link:active {
     text-decoration-color: #ffffff;
 }
-.nav-right {
+.right-nav {
+    width: 15%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.nav-shop {
+    width: 100%;
+    margin-left: 0;
+    list-style-type: none;
+    color: #ffffff;
+}
+.shop-links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shop-link  {
+    color: #ffffff;
+    text-decoration-color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    font-family:'Lato', 'Verdana', 'sans-serif';
+    
 }
 
 .hamburger {
