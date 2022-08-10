@@ -38,17 +38,30 @@ const form = document.querySelector("form");
 form.addEventListener('submit', addMovie);
 
 const deleteMovie = (e) => {
-    message.textContent = `Movie Deleted!`;
+    message.textContent = `${e.target.parentElement.firstElementChild.textContent} was deleted`;
     
     e.target.parentNode.remove();
+
+    revealMessage();
 }    
 
 const crossOffMovie = (e) => {
     e.target.classList.toggle("checked");
 
     if (e.target.classList.contains("checked") === true) {
-        message.textContent = `Movie watched!`; 
+        message.textContent = `You watched ${e.target.textContent}!`; 
     } else {
-        message.textContent = `Movie Added Back!`;
+        message.textContent = `${e.target.textContent} was added to your list`;
     }
+
+    revealMessage();
+}
+
+
+const revealMessage = () => {
+    message.classList.remove("hide");
+
+    setTimeout(() => {
+        message.classList.add("hide")
+    }, 1000)
 }
