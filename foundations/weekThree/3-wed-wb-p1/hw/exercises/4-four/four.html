@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="four.css">
+    <title>Four</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <h1>Lemon Drop</h1>
+            <div class="header-btns">
+                <button type="submit" class="reg-btn">
+                    Register
+                </button>
+                <button type="submit" class="log-btn">
+                    Login
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <nav class="">
+        <ul>
+            <li class="nav-item"><a href="#personal" alt="personal information">Personal</a></li>
+            <li class="nav-item"><a href="#billing" alt="billing-information">Billing</a></li>
+            <li class="nav-item"><a href="#shipping" alt="shipping information">Shipping</a></li>
+            <li class="nav-item"><a href="#preferences" alt="preferences">Preferences</a></li>
+        </ul>
+    </nav>
+    <form action="#">
+        <section id="personal" class="sticky">
+            <h2>Personal Information</h2>
+
+            <div class="inner-section">
+                <div class="form-group">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" id="first-name" name="first-name" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" id="last-name" name="last-name" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Birthday: </label>
+                    <input type="date" id="birthday" name="birthday" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="height">Height: </label>
+                    <input type="number" id="height" name="height placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight: </label>
+                    <input type="number" id="weight" name="weight" placeholder="">
+                </div>
+            </div>
+        </section>
+
+        <section id="billing" class="sticky">
+            <h2>Billing Information</h2>
+        
+            <div class="inner-section">
+                <div class="form-group">
+                    <label for="credit">Credit Card Number: </label>
+                    <input type="number" id="credit" name="credit" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Name on Card: </label>
+                    <input type="text" id="card-name" name="card-name" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="expiration">Expiration Date: </label>
+                    <input type="date" id="expiration" name="expiration" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="cvc">CVC Code (on back): </label>
+                    <input type="number" id="cvc" name="cvc" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip Code: </label>
+                    <input type="number" id="zip" name="zip" placeholder="">
+                </div>
+            </div>
+        </section>
+
+        <section id="shipping" class="sticky">
+            <h2>Shipping Information</h2>
+        
+            <div class="inner-section">
+                <div class="form-group">
+                    <label for="address">Street Address: </label>
+                    <input type="text" id="address" name="address" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="city">City: </label>
+                    <input type="text" id="city" name="city" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="state">State: </label>
+                    <input type="text" id="state" name="state" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip Code: </label>
+                    <input type="number" id="zip" name="zip" placeholder="">
+                </div>
+            </div>
+        </section>
+
+        <section id="preferences">
+            <h2 class="">Preferences</h2>
+
+            <div class="inner-section ">
+                <div class="form-group prefer">
+                    <p>Do your prefer morning or afternoon deliveries?</p>
+                    <label for="mornings">Mornings: </label>
+                    <input type="radio" id="mornings" name="preferred deliveries" value="Mornings">
+                    <label for="afternoons">Afternoons: </label>
+                    <input type="radio" id="afternoons" name="preferred deliveries" value="Afternoons">
+                </div>
+                <div class="form-group prefer">
+                    <p>Do your prefer cats or dogs? </p>
+                    <label for="cats">Cats: </label>
+                    <input type="radio" id="cats" name="preferred animal" value="Cats">
+                    <label for="dogs">Dogs: </label>
+                    <input type="radio" id="dogs" name="preferred animal" value="Dogs">
+                </div>
+                <div class="form-group prefer">
+                    <p>Do your prefer the beach or the mountains?</p>
+                    <label for="beach">Beach: </label>
+                    <input type="radio" id="beach" name="preferred location" value="Beach">
+                    <label for="mountains">Mountains:  </label>
+                    <input type="radio" id="mountains" name="preferred location" value="Mountains">
+                </div>
+                <div class="form-group prefer">
+                    <p>Do your prefer foods that are sweet or salty?</p>
+                    <label for="sweet">Sweet: </label>
+                    <input type="radio" id="sweet" name="preferred location" value="Sweet">
+                    <label for="salty">Salty: </label>
+                    <input type="radio" id="salty" name="preferred location" value="Salty">
+                </div>
+
+                <button class="bottom-btnReg" type="submit">Register</button>
+            </div>
+
+            
+        </section>
+
+        
+    </form>
+    <footer>
+        <div class="footer-left">
+            <a class="footer-link" href="#">Lemon Drop</a>
+        </div>
+        <div class="footer-right">
+            <div>
+                <p class="link-header">Links</p>
+            </div>
+            <ul class="footer-nav">
+                <li class="footer-link"><a href="#">One</a></li>
+                <li class="footer-link"><a href="#">Two</a></li>
+                <li class="footer-link"><a href="#">Three</a></li>
+            </ul>
+        </div>
+    </footer>
+    <button class="scroll">
+    <a href="#" alt="scroll to top" class="scroll-link">&#9650;</a>
+    </button>
+    
+</body>
+</html>
