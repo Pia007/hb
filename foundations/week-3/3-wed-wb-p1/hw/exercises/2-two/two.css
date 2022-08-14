@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    margin: 150px auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+    box-shadow: 50px 50px 100px #5a5a5a,
+        -50px -50px 100px #ffffff;
+}
+.box {
+    width: 100px;
+    height: 100px;
+}
+.odd {
+    background: rgb(13, 75, 94);
+}
+.even {
+    background:rgb(228, 171, 215);
+}

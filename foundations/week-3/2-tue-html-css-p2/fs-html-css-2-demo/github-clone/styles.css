@@ -1,0 +1,63 @@
+/*
+    charcoal background: #2D333B
+    black background: #22272E
+    outlines: #444C56
+    off white text: #CDD9E5
+    light gray text: #ACB9C6
+    orange underline: #EC775C
+    blue repo name: #539BF5
+    yellow JavaScript circle: #F1E05A
+    redorange HTML circle: #E34C26
+*/
+
+/*GLOBAL*/
+* {
+   background: #0d1117;
+    color: #a8afb7; 
+}
+
+
+/*HEADER*/
+header {
+    background: #161b22;
+    font-size: 20px;
+    color: #f0f6fc;
+}
+
+/*MAIN*/
+main {
+    display: grid;
+    grid-template-areas: 'menu header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 5px;
+    padding: 10px;
+    background: #0d1117;
+    color: #f0f6fc;
+    border: 3px solid #a8afb7;
+}
+
+
+
+/*REPO NAV*/
+nav {
+    grid-area: header;
+    border: 3px solid #a8afb7;
+}
+
+
+/*CONTAINER*/
+
+
+/*LEFT PROFILE*/
+#left-profile {
+    grid-area: menu;
+    border: 3px solid #a8afb7;
+}
+
+
+/*RIGHT REPOS*/
+#main-content {
+    grid-area: main;
+    border: 3px solid #a8afb7;
+}

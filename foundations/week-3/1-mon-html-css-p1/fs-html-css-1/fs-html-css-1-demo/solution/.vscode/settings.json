@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "gitlens.liveshare.allowGuestAccess": false,
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.port": 3000,
+}
