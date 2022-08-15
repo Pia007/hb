@@ -37,7 +37,7 @@ app.get('/api/inventory', (req, res) => {
   } else {
     res.status(200).send(inventory);
   }
-
+  // note that using includes allow for searching of partial strings and an empty string will return all of the items in the array
 
   // send all inventory to the FE in a response
   // res.status(200).send(inventory);
