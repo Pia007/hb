@@ -1,0 +1,26 @@
+1.  Check if the POST request accept params, queries, and/or a body.    Which one(s) and what information is it expecting to be sent?
+    POST request accepts a body object. It expects a key-value-pair of {"text": "string"}.
+2.   What data type does the GET request return?
+    The GET request returns an array.
+3.  What would the URL look like for deleting the post with the id 555? (This post does not exist anymore, but the syntax is the same for existing posts)
+    https://practiceapi.devmountain.com/api/posts/?id=555
+4.  List the possible response codes from the GET request at /posts/filter.
+    200 and 409
+5. Create a post whose text is your name, record the URL and body here:
+    https://practiceapi.devmountain.com/api/posts/
+    {
+        "text": "Pia T"
+    }
+6. What would the URL and body object be to update the post you just made to contain your faovrite color instead of your name?
+    https://practiceapi.devmountain.com/api/posts/?id=1011
+7.  What is the URL to get posts that contain the text “blue”?
+    https://practiceapi.devmountain.com/api/posts/filter/?text=blue
+8.  Make a request to GET all the posts. What are the content type and charset of the response? (Hint: look on the Headers)
+    The content-type is application/json.
+    The charset type is charset=utf-8.
+9.  What would cause a PUT request to return a 409 status?   
+    A PUT request would return a 409 status if the request was missing a request query id or a request body.
+10. What happens if you try to send a query in the GET request URL? Why do you get that response?
+    The server will satisfy the request as long as the query meets the key value pair requirements. This is because a GET request do not have a request body but can request specific data using URL parameters.
+
+
