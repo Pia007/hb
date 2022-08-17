@@ -1,3 +1,10 @@
+:root {
+    --galaxy-pink: rgb(220, 133, 191);
+    --galaxy-blue: rgb(0, 153, 204);
+    --galaxy-border: 4px dotted var(--galaxy-blue);
+    --galaxy-shadow: 0px 0px 10px var(--galaxy-pink);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,34 +21,28 @@ body {
     background-size: 50px 50px;
     background-color: black;
     background-image: radial-gradient(circle, rgb(20, 241, 241) 1px, rgba(0, 0, 0, 0) 1px);
-    font-family: 'Raleway Dots', cursive;
 }
 
+button,
+.resident {
+    padding: 10px;
+    align-self: center;
+    font-weight: 500;
+    color: var(--galaxy-pink);
+    border: var(--galaxy-border);
+    background: black;
+    box-shadow: var(--galaxy-shadow);
+}
 button {
     height: 80px;
     width: auto;
     margin-top: 200px;
     margin-bottom: 20px;
-    padding: 10px;
-    border: 4px dotted rgb(20, 241, 241);
-    border-radius: 15px;
     font-size: 3rem;
-    font-weight: 500;
-    align-self: center;
-    background: black;
-    color: rgb(20, 241, 241);
-    box-shadow: 0px 0px 10px rgb(20, 241, 241);
+    border-radius: 15px;
 }
 .resident {
     margin: 10px 0;
-    padding: 10px;
-    background: #f2f2f2;
-    border: 4px dotted rgb(20, 241, 241);
-    border-radius: 10px;
     font-size: 2rem;
-    font-weight: 500;
-    align-self: center;
-    color: rgb(20, 241, 241);
-    background: black;
-    box-shadow: 0px 0px 10px rgb(20, 241, 241);
+    border-radius: 10px;
 }
