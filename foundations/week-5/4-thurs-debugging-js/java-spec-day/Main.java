@@ -64,7 +64,7 @@ public class Main {
         //Create an array with 10 spots, assign each spot with a value from 0 to 9 corresponding to the correct spot
         //CODE HERE
 
-        int[] array = new int[10];
+        int[] array = {0, 1, 2, 3, 4,5, 6, 7, 8, 9};
 
         //Problem 10
         //Print the array to the console in the correct order
@@ -79,13 +79,17 @@ public class Main {
         // the array
         // CODE HERE
 
+        String outcome = "No Duplicates found";
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
+    
+            for (int j = i + 1; j < array.length; j++) {
                 if (array[i] == array[j]) {
-                    System.out.println("Duplicate");
+                    outcome = "Duplicates found";
+                    System.out.println(outcome);
                 }
             }
         }
+        System.out.println(outcome);
     }
 
     public void project() {
