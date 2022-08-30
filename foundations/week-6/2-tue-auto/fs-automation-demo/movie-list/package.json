@@ -1,21 +1,17 @@
 {
-    "name": "movie-list",
-    "jest": {
-        "testEnvironment": "node",
-        "testTimeout": 30000
-    },
-    "scripts": {
-        "test": "jest"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@types/jest": "^26.0.15",
-        "@types/selenium-webdriver": "^4.0.12",
-        "chromedriver": "^95.0.0",
-        "geckodriver": "^2.0.4",
-        "jest": "^26.6.3",
-        "selenium-webdriver": "^4.0.0-beta.3"
-    }
+  "name": "google",
+  "version": "1.0.0",
+  "description": "",
+  "main": "practiceTest.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^104.0.0",
+    "jest": "^29.0.1",
+    "selenium-webdriver": "^4.4.0"
+  }
 }
