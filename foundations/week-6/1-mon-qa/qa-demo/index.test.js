@@ -32,7 +32,7 @@ test('Check to see if fake data firstName is Patten', () => {
 // Describe block to test the actual functions we've imported 
   // describe block helps with grouping tests together
   // Testing out the formatTitle functionality
-describe('Testing our the formatTitle function', () => {
+describe('Testing our formatTitle function', () => {
   
   // Lets check to see if fomatTitle actually retruns a string
   test('formatTitle should return a string', () => {
@@ -78,10 +78,10 @@ describe('shortenBio tests', () => {
   });
 
 
-  //Although it's not the best solutin, the ellipsis(...) should be present when the bio is shortened
+  //Although it's not the best solution, the ellipsis(...) should be present when the bio is shortened
   // We can check that using the toContain() method
 
-  test('shortenBio shoulf add periods to the end of the string', () => {
+  test('shortenBio should add periods to the end of the string', () => {
     //We can check that usig the toContain() method
     test('shortenBio should add periods to the end of the string', () => {
       let shortenedBio = shortenBio(testData.bio);
