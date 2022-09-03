@@ -1,4 +1,4 @@
-jest.setTimeout(18000000);
+jest.setTimeout(10000);
 
 
 // destructure dependencies from selenium webdriver
@@ -10,13 +10,18 @@ const { displayMessage } = require('./displayMessage');
 // chromedriver
 require('chromedriver');
 
+
+
 // create a new webdriver instance
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build();
 
+// var options = new chrome.Options();
+
+// options.excludeSwitches('enable-automation')
 
 // run before all tests
 beforeAll(async () => {
-    await driver.get('http:127.0.0.1:3000/movieList/index.html');
+    await driver.get('http://127.0.0.1:5500/movieList/index.html');
 });
 
 

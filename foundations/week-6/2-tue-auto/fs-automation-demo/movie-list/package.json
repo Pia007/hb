@@ -1,5 +1,5 @@
 {
-  "name": "google",
+  "name": "movie-list",
   "version": "1.0.0",
   "description": "",
   "main": "practiceTest.test.js",
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chromedriver": "^104.0.0",
+    "chromedriver": "^105.0.0",
     "jest": "^29.0.1",
     "selenium-webdriver": "^4.4.0"
   }

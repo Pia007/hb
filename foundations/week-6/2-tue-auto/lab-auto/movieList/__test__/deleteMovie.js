@@ -10,6 +10,8 @@ const deleteMovie = async (driver) => {
     // add the movie click the first button
     await driver.findElement(By.xpath(`//button`)).click()
 
+    
+
     //find the element that would display the movie title
     let movieTitle = await driver.findElement(By.xpath(`//span[contains(text(), 'Hidden Figures')]`));
 

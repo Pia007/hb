@@ -9,7 +9,7 @@ const driver = new Builder().withCapabilities(Capabilities.chrome()).build();
 const { addMovie } = require('./addMovie');
 
 beforeAll(async () => {
-    await driver.get('http:127.0.0.1:3000/movie-list/index.html')
+    await driver.get('http://127.0.0.1:5500/movie-list/index.html')
 })
 
 afterAll(async () => {
